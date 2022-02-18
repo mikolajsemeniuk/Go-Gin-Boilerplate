@@ -1,6 +1,6 @@
 package application
 
-func (s *server) Listen() {
-	s.router.GET("", s.auth.Find)
-	s.router.Run(":3000")
+func (server *server) Listen() {
+	server.router.GET("", server.auth.Find)
+	server.router.Run(":3000")
 }
