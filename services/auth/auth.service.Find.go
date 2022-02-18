@@ -2,7 +2,7 @@ package auth
 
 import "fmt"
 
-func (s *service) Find() {
-	s.repository.Find()
+func (service *service) Find() {
+	service.repository.Find()
 	fmt.Println("service")
 }
