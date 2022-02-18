@@ -7,8 +7,8 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func (c *controller) Find(context *gin.Context) {
-	c.service.Find()
+func (controller *controller) Find(context *gin.Context) {
+	controller.service.Find()
 	fmt.Println("controller")
 	context.JSON(http.StatusOK, "hi")
 }
